@@ -1,0 +1,4 @@
+/firestore-config.json
+
+.env*
+.env.local/*
