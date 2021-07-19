@@ -3,6 +3,7 @@ package controllers
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -23,20 +24,21 @@ type BooksHandler struct{
 // w is variable of http.ResponseWriter type and r is variable of *http.Request type
 func  (bh BooksHandler ) GetBooks(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-type", "application/json")
-
+	fmt.Println(&bh.Firestore)
 	iter := bh.Firestore.Collection("books").Documents(context.Background())
 	var books_list []models.Book
 	
-		// Creating a book variable 
-		var book models.Book
+	
 		
 	for {
         doc, err := iter.Next()
         if err == iterator.Done {
                 break
         }
+		// Creating a book variable 
+		var book models.Book
 
-		// Binding data to book variable pointer
+		// Binding data to book pointer variable
 		doc.DataTo(&book)
 		books_list = append(books_list,book)
 		
