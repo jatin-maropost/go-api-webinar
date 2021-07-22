@@ -1,7 +1,13 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { PublicRoutes } from "./routes";
 
 const App = (props) => {
-  return <h1>Hello App</h1>;
+  return (
+    <Router>
+      <PublicRoutes />
+    </Router>
+  );
 };
 
 export default App;
