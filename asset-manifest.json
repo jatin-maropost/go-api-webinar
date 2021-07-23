@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/go-api-webinar/static/js/main.e0de40ec.chunk.js",
+    "main.js.map": "/go-api-webinar/static/js/main.e0de40ec.chunk.js.map",
+    "runtime-main.js": "/go-api-webinar/static/js/runtime-main.8e256f92.js",
+    "runtime-main.js.map": "/go-api-webinar/static/js/runtime-main.8e256f92.js.map",
+    "static/js/2.7e0dc004.chunk.js": "/go-api-webinar/static/js/2.7e0dc004.chunk.js",
+    "static/js/2.7e0dc004.chunk.js.map": "/go-api-webinar/static/js/2.7e0dc004.chunk.js.map",
+    "static/js/3.b1f76034.chunk.js": "/go-api-webinar/static/js/3.b1f76034.chunk.js",
+    "static/js/3.b1f76034.chunk.js.map": "/go-api-webinar/static/js/3.b1f76034.chunk.js.map",
+    "index.html": "/go-api-webinar/index.html",
+    "static/js/2.7e0dc004.chunk.js.LICENSE.txt": "/go-api-webinar/static/js/2.7e0dc004.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e256f92.js",
+    "static/js/2.7e0dc004.chunk.js",
+    "static/js/main.e0de40ec.chunk.js"
+  ]
+}
