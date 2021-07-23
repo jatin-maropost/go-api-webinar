@@ -1,11 +1,17 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { PublicRoutes, AuthRoutes } from "./routes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { PublicRoutes } from "./routes";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = (props) => {
   return (
     <Router>
-      <PublicRoutes />
+      <Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <PublicRoutes />
+          <AuthRoutes />
+        </Suspense>
+      </Switch>
     </Router>
   );
 };
